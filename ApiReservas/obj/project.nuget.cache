@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "/jFDJjcVsX7EENZMV85MfSqRg8lvHHiI/B8qdF6ybImNzW/69sUx4Oke8OhK2zr5mbCMguXIUX5FExsYRBSGnA==",
+  "success": true,
+  "projectFilePath": "D:\\Relinton Sistemas\\Projetos API\\ApiReservas\\ApiReservas\\ApiReservas.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\01712766201\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\6.0.5\\microsoft.aspnetcore.jsonpatch.6.0.5.nupkg.sha512",
+    "C:\\Users\\01712766201\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\01712766201\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

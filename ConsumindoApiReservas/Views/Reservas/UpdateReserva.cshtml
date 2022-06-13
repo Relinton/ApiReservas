@@ -1,0 +1,49 @@
+﻿@model Reserva
+
+@{
+    ViewData["Title"] = "UpdateReserva";
+    Layout = "~/Views/Shared/_reservaLayout.cshtml";
+}
+
+<h1>UpdateReserva</h1>
+
+<h2>Atualiza uma Reserva <a asp-action="Index" class="btn btn-sm btn-success">Retorna</a></h2>
+<form method="post">
+    <div class="form-group">
+        <label asp-for="ReservaId"></label>
+        <input class="form-control" asp-for="ReservaId" readonly />
+    </div>
+    <div class="form-group">
+        <label asp-for="Nome"></label>
+        <input class="form-control" asp-for="Nome" />
+    </div>
+    <div class="form-group">
+        <label asp-for="InicioLocacao"></label>
+        <input class="form-control" asp-for="InicioLocacao" />
+    </div>
+    <div class="form-group">
+        <label asp-for="FimLocacao"></label>
+        <input class="form-control" asp-for="FimLocacao" />
+    </div>
+    <div class="text-center panel-body">
+        <button type="submit" class="btn btn-sm btn-primary">Atualizar</button>
+    </div>
+</form>
+
+@if (ViewBag.Result == "Sucesso")
+{
+    <h2>Reservas</h2>
+    <table class="table table-sm table-striped table-bordered m-2">
+        <thead><tr><th>ID</th><th>Nome</th><th>Início</th><th>Fim</th></tr></thead>
+        <tbody>
+            <tr>
+                <td>@Model.ReservaId</td>
+                <td>@Model.Nome</td>
+                <td>@Model.InicioLocacao</td>
+                <td>@Model.FimLocacao</td>
+            </tr>
+        </tbody>
+    </table>
+}
+
+<h3 class="alert">@ViewBag.Result</h3>
